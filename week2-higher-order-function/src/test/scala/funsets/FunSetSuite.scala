@@ -136,4 +136,44 @@ class FunSetSuite extends FunSuite {
       assert(!contains(s, 3), "Filter out 3")
     }
   }
+
+//  test part 2
+  test("forall: poisitive test of set of 1000") {
+    new TestSets {
+      val s = singletonSet(1000)
+      val filter = (value: Int) => value <= 1000
+      assert(forall(s, filter) == true, "set of 1000 is less than or equal to 1000")
+    }
+  }
+
+  test("forall: negative test of set of 1000") {
+    new TestSets {
+      val s = singletonSet(1000)
+      val filter = (value: Int) => value > 1000
+      assert(forall(s, filter) == false, "set of 1000 is not greater than 1000")
+    }
+  }
+
+  test("exists: Returns whether there exists a bounded integer") {
+    new TestSets {
+      val s = union(union(s1, s2), s3)
+      val testForOne = (value: Int) => value == 1
+      val testForFour = (value: Int) => value == 4
+      assert(exists(s, testForOne), "1 exists in a set of 1, 2, 3")
+      assert(!exists(s, testForFour), "4 does not exist in a set of 1, 2, 3")
+    }
+  }
+
+  test("map: map all elements in a set to another set of elements") {
+    new TestSets {
+      val originalSet = union(s1, union(s2, s3))
+      val mapper = (value: Int) => value * 3
+      val transformedSet = map(originalSet, mapper)
+
+      val testForOne = (value: Int) => value == 1
+      val testForNine = (value: Int) => value == 9
+      assert(!exists(transformedSet, testForOne), "1 does not exist in transformed set of (1, 2, 3)")
+      assert(exists(transformedSet, testForNine), "9 does not exist in transformed set of (1, 2, 3) to (3, 6, 9)")
+    }
+  }
 }

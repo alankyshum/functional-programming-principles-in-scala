@@ -5,3 +5,7 @@
 [0m[[0minfo[0m] [0m[32m- intersect contains elements exist in both sets[0m[0m
 [0m[[0minfo[0m] [0m[32m- diff contains elements exist in both sets[0m[0m
 [0m[[0minfo[0m] [0m[32m- filter contains elements exist in both sets[0m[0m
+[0m[[0minfo[0m] [0m[32m- forall: poisitive test of set of 1000[0m[0m
+[0m[[0minfo[0m] [0m[32m- forall: negative test of set of 1000[0m[0m
+[0m[[0minfo[0m] [0m[32m- exists: Returns whether there exists a bounded integer[0m[0m
+[0m[[0minfo[0m] [0m[32m- map: map all elements in a set to another set of elements[0m[0m
