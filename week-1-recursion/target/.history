@@ -1,0 +1,28 @@
+compile
+run
+test
+scala
+scala-console
+1 + 1
+exit
+console
+help
+console
+run
+test
+console
+test
+console
+test
+submit alan200994@gmail.com QiLNvq1l0JrF60fo
+console
+test
+def coinsToID(usedCoins: String, newCoin: Int): String = {
+      usedCoins
+        .split(',')
+        .map(usedCoin => usedCoin.toInt)
+        .+:(newCoin)
+        .sortBy(coin => coin)
+        .mkString(",")
+    }
+console

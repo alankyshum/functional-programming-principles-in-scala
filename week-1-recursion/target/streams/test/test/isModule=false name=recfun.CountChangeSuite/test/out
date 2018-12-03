@@ -1,0 +1,16 @@
+[0m[[0minfo[0m] [0m[32mCountChangeSuite:[0m[0m
+[0m[[0minfo[0m] [0m[31m- countChange: example given in instructions *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  2 did not equal 3 (CountChangeSuite.scala:13)[0m[0m
+[0m[[0minfo[0m] [0m[31mException encountered when attempting to run a suite with class name: recfun.CountChangeSuite *** ABORTED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.OutOfMemoryError: GC overhead limit exceeded[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.ListBuffer.$plus$eq(ListBuffer.scala:174)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.ListBuffer.$plus$eq(ListBuffer.scala:45)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Growable.scala:59)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Growable.scala:59)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.immutable.WrappedString.foreach(WrappedString.scala:33)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:59)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:183)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:45)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.TraversableLike$class.to(TraversableLike.scala:590)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
